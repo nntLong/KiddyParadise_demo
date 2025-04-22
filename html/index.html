@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddy Paradise</title>
+    <link rel="icon" href="../images/Header/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/Header/logo.png" type="image/x-icon">
+    <base href="/KiddyParadise_demo/">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+   <!-- js -->
+   <script src="../js/jquery-3.5.1.slim.min.js"></script>
+   <script src="../js/popper.min.js"></script>
+   <script src="../js/jquery-3.7.1.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script src="../js/sanpham.js"></script>
+
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="container-fluid">
+        <div class="row text-center" id="top-header">
+            <div class="col-md-3 my-2 p-1">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span id="dateNow">20/04/2025</span>
+            </div>
+            <div class="col-md-3 my-2 p-1">
+                <ul id="top-social-media">
+                    <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-telegram-plane"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 my-2 p-1">
+                <ul id="top-contact">
+                    <li class="list-inline-item mx-2"><a href="../html/thanh-vien.html"><i class="fa-solid fa-user"></i> Thành viên</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/gio-hang.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/dang-ky.html"><i class="fa-solid fa-user-edit"></i> Đăng kí</a></li>
+                    <li class="list-inline-item mx-2 active "><a href="../html/dang-nhap.html"><i class="fa-solid fa-sign-in-alt"></i> Đăng nhập</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/lien-he.html"><i class="fa-solid fa-info-circle"></i> Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end top header -->
+
+
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
+        <!-- Brand and logo -->
+        <a class="navbar-brand" href="../html/index.html"><img src="../images/Header/logo_animation.gif" alt="logo"
+                style="width:45px;"></a>
+        <a href="" class="navbar-brand font-weight-bold"> Kiddy Paradise</a>
+        <!-- toggler hiện menu khi thu nhỏ -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-dark"></i>
+        </button>
+
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="nav-menu-link">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> Cửa hàng</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa fa-list"></i> Bé trai
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../html/shop.html">Tất cả</a>
+                        <a class="dropdown-item" href="../html/DB_trai.html">Đồ bộ bé trai</a>
+                        <a class="dropdown-item" href="../html/Ao_trai.html">Áo bé trai</a>
+                        <a class="dropdown-item" href="../html/Quan_trai.html">Quần bé trai</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa fa-list"></i> Bé gái
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../html/shop.html">Tất cả</a>
+                        <a class="dropdown-item" href="../html/Dam.html">Đầm</a>
+                        <a class="dropdown-item" href="../html/DB_gai.html">Đồ bộ bé gái</a>
+                        <a class="dropdown-item" href="../html/Ao_gai.html">Áo bé gái</a>
+                        <a class="dropdown-item" href="../html/Quan_gai.html">Quần bé gái</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/gio-hang.html"> <i class="fa-solid fa-money-check-dollar"></i> Thanh toán </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/blog.html"> <i class="fa-solid fa-comments"></i> Bài viết</a>
+                </li>
+
+            </ul>
+
+            <!-- nav right và mục tìm kiếm -->
+            <form id="nav-form-search" class="form-inline ml-auto" action="">
+
+
+                <!-- mục tìm kiếm -->
+                <div class="input-group" id="input-search-top">
+                    <!-- Danh mục sản phẩm -->
+                    <select name="" id="select-product-category" class="custom-select">
+                        <option value="all">Tất cả sản phẩm</option>
+                        <option value="Đầm">Đầm</option>
+                        <option value="Đồ bộ bé gái">Đồ bộ bé gái</option>
+                        <option value="Đồ bộ bé trai">Đồ bộ bé trai</option>
+                        <option value="Áo bé gái">Áo bé gái</option>
+                        <option value="Áo bé trai">Áo bé trai</option>
+                        <option value="Quần bé gái">Quần bé gái</option>
+                        <option value="Quần bé trai">Quần bé trai</option>
+                    </select>
+
+                    <!-- Mục tìm kiếm -->
+                    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+
+    <!-- băng chuyền cáo -->
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+            <li data-target="#carouselId" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="../images/Header/banner1.jpg" alt="banner1" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/Header/banner2.png" alt="banner2" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/Header/banner3.jpg" alt="banner3" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/Header/banner4.png" alt="banner4" class="img-fluid">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- end caroseal -->
+
+
+
+    <!-- sản phẩm bán chạy -->
+    <div class="container-fluid my-4">
+        <div class="row">
+            <div class="col">
+                <form class="">
+                    <fieldset class="pr-1 pl-1 pb-3">
+                        <legend class="text-center">
+                            <i class="fa fa-star text-warning"></i>
+                            SẢN PHẨM BÁN CHẠY
+                            <i class="fa fa-star text-warning"></i>
+                        </legend>
+                        <!-- sản phấm bán chạy nhất -->
+                        <div class="row" id="bestSellersCarouselContainer">
+                            <!-- SP1 -->
+                            <div class="col-lg-3 col-md-6 col-12  p-2">
+                                <div class="product-card" data-product="{&quot;name&quot;:&quot;Spider-Man bé trai&quot;,&quot;image&quot;:&quot;../images/BeTrai/DB_spiderMan.png&quot;,&quot;category&quot;:&quot; Bộ thun ngắn tay&quot;,&quot;description&quot;:&quot;Đồ bộ thun ngắn tay, chất lượng cotton, thoải mái cho bé.&quot;,&quot;price&quot;:300000,&quot;discountPercent&quot;:30,&quot;discountPrice&quot;:210000,&quot;details&quot;:[&quot;- Chất lượng vải: 100% cotton&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+
+                                    <div class="product-content">
+                                        <img src="../images/BeTrai/DB_spiderMan.png" alt="Spider-Man bé trai"
+                                            class="product-image img-fluid float-left mr-2">
+                                        <div class="product-title text-center">Spider-Man bé trai</div>
+                                        <div class="product-description">Bộ thun ngắn tay Spider-Man bé trai.</div>
+                                        <ul id="vote-5-star" class="mr-0">
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                        </ul>
+                                        <div class="product-price-container">
+                                            <div class="product-discount">300.000 VND</div>
+                                            <div class="product-price">210.000 VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-discount">-30%</div>
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- SP2 -->
+                            <div class="col-lg-3 col-md-6 col-12  p-2">
+                                <div class="product-card" data-product="{&quot;name&quot;:&quot;Gấu dâu Lotso bé gái&quot;,&quot;image&quot;:&quot;../images/BeGai/DBG_losto.png&quot;,&quot;category&quot;:&quot;Đồ bộ thun ngắn tay&quot;,&quot;description&quot;:&quot;Đồ bộ thun ngắn tay, chất lượng cotton, thoải mái cho bé&quot;,&quot;price&quot;:200000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:160000,&quot;details&quot;:[&quot;- Chất lượng vải: 100% cotton&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                                    <div class="product-content ">
+                                        <img src="../images/BeGai/DBG_losto.png" alt="Gấu dâu Lotso bé gái"
+                                            class="product-image float-left mr-2">
+                                        <div class="product-title text-center">Gấu dâu Lotso bé gái</div>
+                                        <div class="product-description"> Đồ bộ thun ngắn tay Gấu dâu Lotso bé gái.</div>
+                                        <ul id="vote-5-star" class="mr-0">
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                        </ul>
+                                        <div class="product-price-container">
+                                            <div class="product-discount">200.000 VND</div>
+                                            <div class="product-price">160.000 VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-discount">-20%</div>
+                                </div>
+                            </div>
+
+
+                            <!-- SP3 -->
+                            <div class="col-lg-3 col-md-6 col-12  p-2">
+                                <div class="product-card" data-product="{&quot;name&quot;:&quot;Bộ áo váy ngắn tay bé gái&quot;,&quot;image&quot;:&quot;../images/BeGai/DBG_no.png&quot;,&quot;category&quot;:&quot;Bộ áo váy ngắn tay&quot;,&quot;description&quot;:&quot;bộ áo váy ngắn tay bé gái, chất vải thoải mái, cho bé gái.&quot;,&quot;price&quot;:300000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:240000,&quot;details&quot;:[&quot;- Chất lượng vải: 100% cotton&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                                    <div class="product-content ">
+                                        <img src="../images/BeGai/DBG_no.png" alt="áo váy họa tiết nơ ngắn tay bé gái"
+                                            class="product-image float-left mr-2">
+                                        <div class="product-title text-center">Áo váy ngắn tay bé gái</div>
+                                        <div class="product-description">Máo váy họa tiết nơ ngắn tay bé gái.</div>
+                                        <ul id="vote-5-star" class="mr-0">
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                        </ul>
+                                        <div class="product-price-container">
+                                            <div class="product-discount">300.000 VND</div>
+                                            <div class="product-price">240.000 VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-discount">-20%</div>
+                                </div>
+                            </div>
+
+
+                            <!-- sp4 -->
+                            <div class="col-lg-3 col-md-6 col-12  p-2">
+                                <div class="product-card" data-product="{&quot;name&quot;:&quot;Đồ bộ thun ngắn tay Spider-Man bé trai - Mẫu 2&quot;,&quot;image&quot;:&quot;../images/BeTrai/DB_spiderMan2.png&quot;,&quot;category&quot;:&quot;Đồ bộ thun ngắn tay&quot;,&quot;description&quot;:&quot;Đồ bộ thun ngắn tay, chất lượng cotton, thoải mái cho bé.&quot;,&quot;price&quot;:300000,&quot;discountPercent&quot;:30,&quot;discountPrice&quot;:210000,&quot;details&quot;:[&quot;- cotton&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                                    <div class="product-content ">
+                                        <img src="../images/BeTrai/DB_spiderMan2.png" alt="Đồ bộ thun ngắn tay Spider-Man bé trai"
+                                            class="product-image img-fluid float-left mr-2 ">
+                                        <div class="product-title text-center">Spider-Man bé trai Mẫu -2</div>
+                                        <div class="product-description">Đồ bộ thun ngắn tay Spider-Man bé trai.</div>
+                                        <ul id="vote-5-star" class="mr-0">
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                        </ul>
+                                        <div class="product-price-container">
+                                            <div class="product-discount ">300.000 VND</div>
+                                            <div class="product-price ">210.000 VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-discount">-30%</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- dich vu congty start -->
+    <div class="container-fluid my-4" id="dichvucongty">
+        <h3 class="display-4">chào mừng đến với Kiddy Paradise</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h5>Miễn phí vận chuyển</h5>
+                        <p>Để giúp bạn tiện lợi hơn và tiết kiệm chi phí, tụi mình hỗ trợ giao hàng miễn phí trong khu vực nội thành.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-contact-book"></i>
+                        <h5>Liên hệ</h5>
+                        <p> Hotline : 0123456789 <br>
+                            Tụi mình luôn sẵn sàng lắng nghe và hỗ trợ bạn từ 8h đến 21h mỗi ngày, cứ yên tâm nhắn cho tụi mình nhé!
+                           </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <h5>Cam kết chất lượng</h5>
+                        <p>Tụi mình luôn chọn những sản phẩm quần áo trẻ em chất lượng cao, an toàn cho làn da nhạy cảm và đảm bảo về chất liệu lẫn độ bền, để ba mẹ yên tâm cho bé sử dụng mỗi ngày.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-tags"></i>
+                        <h5>Ưu đãi</h5>
+                        <p>Tụi mình thường xuyên có nhiều ưu đãi và khuyến mãi hấp dẫn, giúp ba mẹ tiết kiệm hơn mà vẫn chọn được những món đồ chất lượng cho bé yêu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dich vu cty end -->
+
+    <!-- Danh mục sản phảm theo icon -->
+    <div class="container-fluid my-4" id="list-icon-category">
+        <h3 class="display-4">DANH MỤC</h3>
+        <div class="row p-2">
+            <!-- Đầm -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/Dam.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/Đầm/Dam1.png" alt="dam">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Đầm</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Đồ bộ bé gái -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/DB_gai.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/DB_begai/DBG_6.png" alt="dobobegai">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Đồ bộ bé gái</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Đồ bộ bé trai -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/DB_trai.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/ao_betrai/dobobetrai.webp" alt="dobobetrai">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Đồ bộ bé trai</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Áo bé gái -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/Ao_gai.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/ao_begai/aobegai.webp" alt="ao_begai">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Áo bé gái</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Áo bé trai -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/Ao_trai.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/ao_betrai/aobetrai.webp" alt="ao_betrai">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Áo bé trai</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Quần bé gái -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/Quan_gai.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/quan_begai/quanbegai.webp" alt="quan_begai">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Quần bé gái</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Quần bé trai -->
+            <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+                <a href="../html/Quan_trai.html" class="text-decoration-none">
+                    <div class="home-category">
+                        <div class="home-category-img">
+                            <img class="img-fluid" src="../images/quan_betrai/quanbetrai.webp" alt="quan_betrai">
+                        </div>
+                        <div class="home-category-title text-center">
+                            <span>Quần bé trai</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- flash sale - sản phẩm đang giảm giá -->
+    <div class="container-fluid p-3" id="flash-sale">
+        <div class="p-4" style="border: 5px dashed pink;">
+            <h2 class="text-center display-4 "><i class="fas fa-bolt"></i> Flash Sale - Sản phẩm giảm giá <i
+                    class="fas fa-bolt"></i></h2>
+            <div class="row mb-3" id="flash-sale-top">
+                <div class="countdown-timer">
+                    <div id="countdown"></div>
+                </div>
+                <div id="flash-sale-more">
+                    <a href="../html/shop.html"><span>Xem thêm >></span></a>
+                </div>
+
+            </div>
+            <div class="row" id="flash-sale-main">
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card"
+                    
+                        data-product="{&quot;name&quot;:&quot;Spider-Man bé trai&quot;,&quot;image&quot;:&quot;../images/BeTrai/DB_spiderMan.png&quot;,&quot;category&quot;:&quot;Bộ đồ in hình Spider-Man.&quot;,&quot;description&quot;:&quot;Đồ bộ thun ngắn tay với hình Spider-Man đầy phong cách.&quot;,&quot;price&quot;:300000,&quot;discountPercent&quot;:30,&quot;discountPrice&quot;:210000,&quot;details&quot;:[&quot;- Chất liệu cotton, thiết kế áo quần, size phù hợp quần áo trẻ em&quot;,&quot;- Chất lượng vải: 100% cotton&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                        <img src="../images/uudai/ao_uu_dai_1.png" alt="Spider-Man bé trai"
+                            class="product-image img-fluid">
+                        <div class="product-content d-flex flex-column">
+                            <div class="product-title">Spider-Man bé trai</div>
+                            <div class="product-description">Bộ đồ in hình Spider-Man, thiết kế thoáng mát, năng động</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">300.000₫</div>
+                                <div class="product-price">210.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount ">-30%</div>
+                    </div>
+                </div>
+
+    
+
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card"
+                        data-product="{&quot;name&quot;:&quot;Đầm váy voan ngắn tay&quot;,&quot;image&quot;:&quot;../images/uudai/ao_uu_dai_2.png&quot;,&quot;category&quot;:&quot;Đầm voan.&quot;,&quot;description&quot;:&quot;Đầm váy voan ngắn tay, dịu dàng, dễ thương, phù hợp đi chơi/sinh nhật.&quot;,&quot;price&quot;:250000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:200000,&quot;details&quot;:[&quot;- Vải cotton kết hợp voan, thoáng mát, dịu nhẹ&quot;,&quot;- Chất lượng vải: 100% cotton&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                        <img src="../images/uudai/ao_uu_dai_2.png" alt="Đầm váy voan ngắn tay" class="product-image img-fluid">
+                        <div class="product-content d-flex flex-column">
+                            <div class="product-title">Đầm váy voan ngắn tay</div>
+                            <div class="product-description">Đầm váy voan ngắn tay, dịu dàng, dễ thương, phù hợp đi chơi/sinh nhật</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">250000₫</div>
+                                <div class="product-price">200.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount ">-20%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card"
+                        data-product="{&quot;name&quot;:&quot;Bộ quần áo họa tiết hoạt hình&quot;,&quot;image&quot;:&quot;../images/uudai/ao_uu_dai_3.png&quot;,&quot;category&quot;:&quot;Bộ quần áo bé trai &quot;,&quot;description&quot;:&quot;Bộ đồ bé trai họa tiết hoạt hình, năng động, thoáng mát.&quot;,&quot;price&quot;:150000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:120000,&quot;details&quot;:[&quot;- Chất liệu: Cotton thun co giãn&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                        <img src="../images/uudai/ao_uu_dai_3.png" alt="Bộ quần áo họa tiết hoạt hình"
+                            class="product-image img-fluid">
+                        <div class="product-content d-flex flex-column">
+                            <div class="product-title">Bộ quần áo họa tiết hoạt hình</div>
+                            <div class="product-description">Mũ bảo hiểm lật cằm đẹp mắt, đảm bảo độ an toàn khi điều
+                                khiển xe.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">150.000₫</div>
+                                <div class="product-price">120.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount ">-20%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card"
+                    data-product="{&quot;name&quot;:&quot;Bộ quần áo bé trai/bé gái - Mẫu 4&quot;,&quot;image&quot;:&quot;../images/uudai/ao_uu_dai_4.jpg&quot;,&quot;category&quot;:&quot;Bộ quần áo trẻ em dài tay&quot;,&quot;description&quot;:&quot;Bộ quần áo trẻ em dài tay, chất liệu mềm mại, thiết kế đơn giản nhưng hiện đại.&quot;,&quot;price&quot;:250000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:200000,&quot;details&quot;:[&quot;- Chất liệu: 100% cotton thoáng mát, thấm hút mồ hôi tốt&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                    <img src="../images/uudai/ao_uu_dai_4.jpg" alt="Bộ quần áo bé trai/bé gái - Mẫu 4"
+                            class="product-image img-fluid">
+                        <div class="product-content d-flex flex-column">
+                            <div class="product-title text-center">Bộ quần áo bé gái - Mẫu 4</div>
+                                <div class="product-description">Bộ quần áo trẻ em dài tay, chất liệu mềm mại, thiết kế đơn giản nhưng hiện đại.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">250.000₫</div>
+                                <div class="product-price">200.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount ">-20%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card"
+                        data-product="{&quot;name&quot;:&quot;Váy Bé Gái - Mẫu 1&quot;,&quot;image&quot;:&quot;../images/uudai/ao_uu_dai_5.png&quot;,&quot;category&quot;:&quot;Váy bé gái&quot;,&quot;description&quot;:&quot;Váy bé gái thiết kế dễ thương với hình in hoạt hình nổi bật, chất liệu cotton mềm mại, thoáng mát..&quot;,&quot;price&quot;:300000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:240000,&quot;details&quot;:[&quot;- 100% cotton thoáng mát, thấm hút mồ hôi tốt&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                        <img src="../images/uudai/ao_uu_dai_5.png" alt="Váy Bé Gái - Mẫu 1" class="product-image img-fluid">
+                        <div class="product-content d-flex flex-column">
+                            <div class="product-title">Váy Bé Gái - Mẫu 1</div>
+                            <div class="product-description">Set áo thun và chân váy in hình nơ hot trend sắc nét, đáng yêu.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">300.000₫</div>
+                                <div class="product-price">240.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount ">-20%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card"
+                        data-product="{&quot;name&quot;:&quot;Quần short - Mẫu 2&quot;,&quot;image&quot;:&quot;../images/uudai/ao_uu_dai_6.png&quot;,&quot;category&quot;:&quot;Quần short&quot;,&quot;description&quot;:&quot; Quần short thể thao thoáng mát, co giãn tốt, phù hợp cho hoạt động hằng ngày.&quot;,&quot;price&quot;:150000,&quot;discountPercent&quot;:10,&quot;discountPrice&quot;:135000,&quot;details&quot;:[&quot;- Chất liệu: Cotton thun co giãn&quot;,&quot;- Size S: 23 - 26kg&quot;,&quot;- Size M: 27 - 31kg&quot;,&quot;- Size L: 33 - 36kg&quot;,&quot;- Size XL: 38 - 40kg&quot;]}">
+                        <img src="../images/uudai/ao_uu_dai_6.png" alt="Quần short - Mẫu 2"
+                            class="product-image img-fluid">
+                        <div class="product-content d-flex flex-column">
+                            <div class="product-title">Quần short - Mẫu 2</div>
+                            <div class="product-description">Quần short kaki đứng form, lưng chun co giãn thoải mái kèm 2 túi phía trước tiện lợi cho bé.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">150.000₫</div>
+                                <div class="product-price">135.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount ">-10%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress mt-3">
+                <span class="progress-text">ĐANG BÁN CHẠY</span>
+                <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar"
+                    style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- end flash sale -->
+
+    <!-- Feedback -->
+    
+    <div class="container-fluid my-4 text-center">
+        <h5 class="cute-title">Feedback</h5>
+      
+        <div class="parent">
+          <div class="div1"><img src="../images/feedback/1.png" alt=""></div>
+          <div class="div2"><img src="../images/feedback/2.png" alt=""></div>
+          <div class="div3"><img src="../images/feedback/3.png" alt=""></div>
+          <div class="div4"><img src="../images/feedback/1.png" alt=""></div>
+          <div class="div5"><img src="../images/feedback/5.png" alt=""></div>
+          <div class="div6"><img src="../images/feedback/4.png" alt=""></div>
+        </div>
+      </div>
+    
+
+    <!-- Bài viết start -->
+    <div class="container-fluid my-4">
+        <h3 class="display-4 text-center ">Bài viết</h3>
+        <div class="row p-3">
+            <div class="col-md-6 col border  my-2 ">
+                <div class="row align-items-center h-100">
+                    <div class="col-4 d-flex align-items-center p-2">
+                        <img src="../images/BeGai/anhbegai1.webp" class="img-fluid rounded" alt="Blog 1">
+                    </div>
+                    <div class="col-8">
+                        <h6 class="mb-3">4 loại vải tốt nhất dùng cho quần áo bé trai, bé gái</h6>
+                        <p class="text-justify mb-4">
+                            Việc chọn loại vải phù hợp để may quần áo cho bé trai,
+                            bé gái không chỉ là một lựa chọn về thời trang mà còn ảnh hưởng trực tiếp đến sự thoải mái và sức khỏe của trẻ.
+                             Hãy cùng tìm hiểu 4 loại vải được đánh giá cao và phù hợp nhất cho trẻ nhỏ trong bài viết dưới đây.
+                        </p>
+                        <div class="text-center">
+                            <a href="../html/blog-4 l-loai-vai-tot-nhat.html" class="btn btn-info btn-sm">Xem thêm ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col border my-2">
+                <div class="row align-items-center h-100">
+                    <div class="col-4 d-flex align-items-center p-2">
+                        <img src="../images/BeTrai/anhbetrai1.webp" class="img-fluid rounded" alt="Blog 2">
+                    </div>
+                    <div class="col-8">
+                        <h6 class="mb-3">Chọn quần áo phù hợp với dáng người của bạn</h6>
+                        <p class="text-justify mb-4">
+                            Quần áo không chỉ giúp bạn trở nên thu hút hơn mà còn thể hiện cá tính và gu thẩm mỹ riêng. 
+                            Tuy nhiên, để đạt được vẻ ngoài hoàn hảo, việc chọn quần áo phù hợp với dáng người là vô cùng quan trọng. 
+                            Hãy cùng khám phá cách lựa chọn trang phục sao cho tôn dáng và thoải mái nhất trong bài viết này.
+                        </p>
+                        <div class="text-center">
+                            <a href="../html/blog-chon-quan-ao-phu-hop.html" class="btn btn-info btn-sm">Xem thêm ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end bài viết -->
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                </div>
+                <div id="alertContainer"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- foooter start -->
+    <div id="footer" class="mt-5 w-100">
+        <div class="container">
+            <div id="footer-main">
+                <div class="row">
+                    <!-- giới thiệu -->
+                    <div class="col-md-5 mt-3 ">
+                        <div class="cty-name">
+                            <a href="../html/index.html"><img src="../images/Header/logo.png" style="width: 70px;"
+                                    alt="logo">
+                            </a>
+                            <span class="ten-cty"> CÔNG TY TTHH Kiddy Paradise </span>
+
+                        </div>
+
+                        <div class="cty-about mt-2">
+                            <span class="contact-icon">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </span>
+                            <div class="contact-detail">
+                                Chuyên cung cấp quần áo trẻ em chất lượng cao, thoải mái, an toàn cho làn da nhạy cảm. Từ những ngày đến lớp đến những buổi dạo chơi, trang phục của chúng tôi luôn là người bạn đáng tin cậy của bé yêu trên từng bước trưởng thành.
+
+                            </div>
+                        </div>
+
+                        <div class="cty-ban-quyen mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <div class="contact-detail">
+                                © Mọi hình ảnh được sử dụng trong website thuộc quyền sở hữu của
+                                <a href="https://rabity.vn/">rabity</a>.
+                                Mọi giao dịch đều là ảo không thể thanh toán.
+                            </div>
+                        </div>
+
+                        <div class="cty-muc-dich mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-school"></i>
+                            </span>
+                            <div class="contact-detail">
+                                Đây là dự án bài tập lớn của môn Hệ thống Công nghệ
+                                website. Thực hiện viết và xây dựng lên website bán hàng. Mọi hình ảnh và sản phẩm
+                                trong
+                                website chỉ mang tính thử nghiệm, không mang tính chất thương mại.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- liên hệ -->
+                    <div class="col-md-3 mt-3">
+                        <div class="cty-title-contact">
+                            <span class="ten-cty">Liên hệ</span>
+                        </div>
+
+                        <div class="cty-address mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <div class="contact-detail">
+                                Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP.HCM
+                            </div>
+                        </div>
+
+                        <div class="cty-tel mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="contact-detail">
+                                <a href="tel:+012 345 6789">Điện thoại: +012 345 6789</a>
+                            </div>
+                        </div>
+
+                        <div class="cty-mail mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <div class="contact-detail">
+                                <a href="mailto:cskh@rabity.com">Email: cskh@rabity.com</a>
+                            </div>
+                        </div>
+
+                        <div class="cty-web mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                            <div class="contact-detail">
+                                <a href="#">Website: www.rabity.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theo dõi chúng tôi -->
+                    <div class="col-md-4 mt-3">
+                        <div class="cty-follow-us mb-3">
+                            <span class="ten-cty mb-2">Tương tác với chúng tôi</span>
+                            <ul id="bottom-social-media" class="font-size-lagre">
+                                <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-telegram-plane"></i></a></li>
+                                <li class="list-inline-item mx-2"><a href="../html/index.html"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <span class="ten-cty my-2">Phương thức thanh toán</span>
+                            <ul class="nav">
+                                <li class="mx-1"><img src="../images/img/payment_1_img.webp" alt=""></li>
+                                <li class="mx-1"><img src="../images/img/payment_2_img.webp" alt=""></li>
+                                <li class="mx-1"><img src="../images/img/payment_3_img.webp" alt=""></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <span class="ten-cty my-2">Phương thức vận chuyển</span>
+                        <ul class="nav">
+                            <li class="mx-1"><img src="../images/img/shipment_1_img.webp" alt=""></li>
+                            <li class="mx-1"><img src="../images/img/shipment_2_img.webp" alt=""></li>
+                            <li class="mx-1"><img src="../images/img/shipment_3_img.webp" alt=""></li>
+                            <li class="mx-1"><img src="../images/img/shipment_4_img.webp" alt=""></li>
+                        </ul>
+                        </div>
+                        
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- footer bôttom -->
+            <div id="footer-bottom">
+                <div class="row" style=" width: 100%;">
+                    <div class="col-md-12">
+
+                        <p> © 2025 Kiddy Paradise by Ngô Thành Long và Khưu Minh Nhật . All Right Reserved. Kiddy Paradise is Powered by HTML, CSS,
+                           Bootstrap.</p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer endd -->
+
+</body>
+
+
+</html>
